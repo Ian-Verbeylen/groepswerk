@@ -1,0 +1,7 @@
+:root {
+  --green: #9ddbad;
+}
+
+.navbar {
+  background-color: var(--green);
+}

@@ -1,5 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Frigo from "./pages/Frigo";
@@ -16,7 +19,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="frigo" element={<Frigo />} />
-          <Route path="winkelijst" element={<Winkellijst />} />
+          <Route path="winkellijst" element={<Winkellijst />} />
           <Route path="receptenboek" element={<Receptenboek />} />
           <Route path="profiel" element={<Profiel />} />
           <Route path="about" element={<About />} />
