@@ -1,3 +1,14 @@
+Documentation links:
+
+React router:
+https://www.w3schools.com/react/react_router.asp
+https://reactrouterdotcom.fly.dev/docs/en/v6/getting-started/tutorial
+https://www.npmjs.com/package/react-router-bootstrap
+
+CSS:
+https://www.w3schools.com/css/css3_variables.asp
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
