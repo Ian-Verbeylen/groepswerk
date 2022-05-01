@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
@@ -8,8 +6,6 @@ import Button from "react-bootstrap/Button";
 import panIcon from "../icons/frying-pan.png";
 import cartIcon from "../icons/shopping-cart.png";
 import binIcon from "../icons/bin.png";
-
-import { FRIDGE } from "../testMockData";
 
 const Heading = ({ fridge }) => {
   return (
@@ -38,7 +34,7 @@ const IngredientsTable = ({ fridge }) => {
   );
 };
 
-const IngredientsRow = ({ id, name, amount, unit, expirationDate }) => {
+const IngredientsRow = ({ name, amount, unit, expirationDate }) => {
   return (
     <tr>
       <td>
@@ -148,8 +144,7 @@ const SelectExpirationDate = () => {
   );
 };
 
-const Frigo = () => {
-  const [fridge, setFridge] = useState({ FRIDGE });
+const Frigo = ({ fridge }) => {
   return (
     <>
       <Container>

@@ -13,9 +13,11 @@ import Profiel from "./pages/Profiel";
 import About from "./pages/About";
 import NoPage from "./pages/NoPage";
 
+import { FRIDGE } from "./testMockData";
 import { INGREDIENTS } from "./testMockData";
 
 function App() {
+  const [fridge, setFridge] = useState({ FRIDGE });
   const [ingredients, setIngredients] = useState({ INGREDIENTS });
 
   return (
@@ -23,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="frigo" element={<Frigo />} />
+          <Route path="frigo" element={<Frigo fridge={fridge} />} />
           <Route path="winkellijst" element={<Winkellijst />} />
           <Route path="receptenboek" element={<Receptenboek />} />
           <Route path="profiel" element={<Profiel />} />
