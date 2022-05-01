@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,7 +13,11 @@ import Profiel from "./pages/Profiel";
 import About from "./pages/About";
 import NoPage from "./pages/NoPage";
 
+import { INGREDIENTS } from "./testMockData";
+
 function App() {
+  const [ingredients, setIngredients] = useState({ INGREDIENTS });
+
   return (
     <BrowserRouter>
       <Routes>

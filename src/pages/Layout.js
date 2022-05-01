@@ -8,7 +8,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 import "../css/Style.css";
 
-/* notes: 
+/* TODO: 
   - for the navbar, i copied section "Responsive behaviors" from:
     https://react-bootstrap.github.io/components/navbar/#color-schemes
   - username value needs to be linked to data file (later to database)
